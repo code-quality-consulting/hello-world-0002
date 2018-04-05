@@ -1,10 +1,7 @@
 const assert = require("assert");
 
-function makeGreeting(name) {
-    if (name) {
-        return "Hello" + " " + name + "!";
-    }
-    return "Hello world!";
+function makeGreeting(name = "world") {
+    return "Hello" + " " + name + "!";
 }
 
 assert.equal(makeGreeting(), "Hello world!");
