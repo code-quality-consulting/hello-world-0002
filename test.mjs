@@ -1,8 +1,9 @@
-const assert = require("assert");
+/*jslint
+    node
+*/
 
-function makeGreeting(name = "world") {
-    return "Hello" + " " + name + "!";
-}
+import assert from "assert";
+import {makeGreeting} from "./index";
 
 assert.equal(makeGreeting(), "Hello world!");
 assert.equal(makeGreeting("Ben"), "Hello Ben!");
