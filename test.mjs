@@ -3,7 +3,7 @@
 */
 
 import assert from "assert";
-import {makeGreeting} from "./index";
+import {makeGreeting, makeGreeter} from "./index";
 
 const makeEnglishGreeting = makeGreeter("English");
 assert.equal(makeEnglishGreeting(), "Hello world!");
