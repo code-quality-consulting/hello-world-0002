@@ -5,7 +5,8 @@
 import assert from "assert";
 import {makeGreeting} from "./index";
 
-assert.equal(makeGreeting(), "Hello world!");
+const makeEnglishGreeting = makeGreeter("English");
+assert.equal(makeEnglishGreeting(), "Hello world!");
 assert.equal(makeGreeting("Ben"), "Hello Ben!");
 assert.equal(makeGreeting("", "Spanish"), "\u00A1Hola mundo!");
 assert.equal(makeGreeting("Alfredo", "Spanish"), "\u00A1Hola Alfredo!");
