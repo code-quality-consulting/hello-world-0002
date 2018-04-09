@@ -3,7 +3,7 @@
 */
 
 import assert from "assert";
-import {makeGreeting, makeGreeter} from "./index";
+import {makeGreeter} from "./index";
 
 const makeEnglishGreeting = makeGreeter("English");
 const makeSpanishGreeting = makeGreeter("Spanish");
@@ -11,7 +11,10 @@ const makeSpanishGreeting = makeGreeter("Spanish");
 assert.equal(makeEnglishGreeting(), "Hello world!");
 assert.equal(makeEnglishGreeting("Ben"), "Hello Ben!");
 assert.equal(makeSpanishGreeting(), "\u00A1Hola mundo!");
-assert.equal(makeGreeting("Alfredo", "Spanish"), "\u00A1Hola Alfredo!");
+assert.equal(
+    makeSpanishGreeting("Andr\u00E9s", "Spanish"),
+    "\u00A1Hola Andr\u00E9s!"
+);
 console.log("success");
 
 /*
