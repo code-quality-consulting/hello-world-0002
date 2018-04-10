@@ -1,8 +1,8 @@
 export function makeGreeter(language) {
     if (language === "Russian") {
-        return function () {
-            return "Привет мир!";
-        }
+        return function (name = "мир") {
+            return "Привет " + name + "!";
+        };
     }
     if (language === "Spanish") {
         return function (name = "mundo") {
