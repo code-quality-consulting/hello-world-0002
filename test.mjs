@@ -16,7 +16,7 @@ assert.equal(
     makeSpanishGreeting("Andr\u00E9s", "Spanish"),
     "\u00A1Hola Andr\u00E9s!"
 );
-assert.equal(makeRussianGreeting(),"Привет мир!");
+assert.equal(makeRussianGreeting(), "Привет мир!");
 console.log("success");
 
 /*
