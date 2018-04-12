@@ -22,7 +22,7 @@ assert.equal(
 );
 assert.equal(greet.russian(), "Привет мир!");
 assert.equal(greet.russian("Mike"), "Привет Mike!");
-assert.equal(greet.greek(), "γειά σον κόσμος!");
+assert.equal(greet.greek(), "γειά σου κόσμος!");
 console.log("success");
 
 /*
