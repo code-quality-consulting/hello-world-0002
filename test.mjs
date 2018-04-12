@@ -8,8 +8,9 @@ import {makeGreeter} from "./index";
 const greet = {
     "english": makeGreeter("English"),
     "spanish": makeGreeter("Spanish"),
-    "russian": makeGreeter("Russian")
-}
+    "russian": makeGreeter("Russian"),
+    "greek": makeGreeter("Greek")
+};
 
 
 assert.equal(greet.english(), "Hello world!");
@@ -21,6 +22,7 @@ assert.equal(
 );
 assert.equal(greet.russian(), "Привет мир!");
 assert.equal(greet.russian("Mike"), "Привет Mike!");
+assert.equal(greet.greek(), "γειά σου κόσμος!");
 console.log("success");
 
 /*
