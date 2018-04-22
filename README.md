@@ -4,3 +4,4 @@
 * Greets user with "Hello World!"
 * Greets user with "¡Hola mundo!"
 * Greets user with "Привет мир!"
+* Greets user with "Hallo wereld!"
